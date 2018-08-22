@@ -1,0 +1,60 @@
+﻿.taskmanager-logo {
+    position: absolute;
+
+    .taskmanager-logo-wrapper {
+        position: relative;
+        bottom: 24px;
+        left: 38px;
+
+        .background {
+            width: 22.5px;
+            height: 17px;
+            background: darken($theme-color, 4%);
+            border: 2px solid darken($navbar-background, 2%);
+        }
+
+        .side-rectangles {
+            position: relative;
+            top: 5px;
+            width: 6.75px;
+            height: 12.3px;
+            background: darken($sidebar-background, 4%);
+
+            &.right-rectangle {
+                top: -7px;
+                left: 15.75px;
+            }
+        }
+
+        .connecting-rectangles {
+            position: relative;
+            width: 6px;
+            top: 1px;
+            left: 5.5px;
+            height: 10.8px;
+            background: darken($sidebar-background, 4%);
+            transform: rotate(140deg);
+
+            &.right-connecting-rectangle {
+                left: -4.275px;
+                transform: rotate(40deg);
+            }
+        }
+
+        .bottom-section {
+            position: relative;
+            width: 4.5px;
+            height: 8.1px;
+            background: darken($sidebar-background, 4%);
+            top: -16px;
+            left: 9px;
+        }
+    }
+}
+
+.taskmanager-logo-text {
+    position: relative;
+    left: 37px;
+    font-size: 16px;
+    font-weight: bold;
+}

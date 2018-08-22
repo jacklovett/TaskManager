@@ -1,0 +1,446 @@
+/** group together individual scss files **/
+/*
+*   Theme
+*/
+/*
+*   Header (Nav)
+*/
+/*
+    Nav divider
+*/
+/*
+*   Sidebar
+*/
+/*
+*   Bread Crumbs
+*/
+/*
+*   Page Content
+*/
+/*
+*   Active Tags
+*/
+/*
+* Buttons
+*/
+html {
+  position: relative;
+  min-height: 100px;
+  -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+  color: #666666; }
+
+body {
+  font-family: 'Open Sans', 'Droid Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.54;
+  color: #666666;
+  background-color: #f2f2f2;
+  overflow: hidden; }
+
+h1, h2, h3, h4 {
+  color: #00a4a4; }
+  h1.page-title, h2.page-title, h3.page-title, h4.page-title {
+    position: relative;
+    margin-left: 20px; }
+  h1.project-page-title, h2.project-page-title, h3.project-page-title, h4.project-page-title {
+    position: absolute;
+    margin-left: 20px; }
+
+#topbanner {
+  border: none;
+  color: #00a4a4;
+  height: 40px; }
+  #topbanner.bannerbar {
+    background-color: #001a1a; }
+    #topbanner.bannerbar .toolbar-left {
+      position: absolute;
+      padding: 5px 0 0 11px;
+      font-size: 20px;
+      color: #00a4a4; }
+      #topbanner.bannerbar .toolbar-left div.divider {
+        display: inline;
+        margin-left: 5px;
+        border-left: 2px solid #003e3e; }
+      #topbanner.bannerbar .toolbar-left div.taskmanager {
+        display: inline;
+        position: relative;
+        left: 10px; }
+    #topbanner.bannerbar .toolbar-right {
+      position: relative;
+      padding-top: 7px;
+      float: right;
+      right: 15px;
+      font-size: 20px;
+      color: #00a4a4; }
+
+.page {
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 15px;
+  top: 40px;
+  bottom: 0px;
+  left: 225px;
+  right: 0; }
+  .page .breadcrumb-panel {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #00a4a4;
+    border-bottom: 1px solid #00a4a4; }
+  .page .page-content {
+    padding-top: 5px;
+    margin: 5px; }
+
+hr {
+  width: 90%;
+  color: #e6e6e6;
+  background-color: #e6e6e6;
+  opacity: 0.5;
+  border-radius: 20%; }
+
+.overview-row {
+  position: relative;
+  bottom: 20px; }
+  .overview-row.overview-third-row {
+    bottom: 40px; }
+
+.active-tag {
+  font-size: 12px;
+  font-weight: normal; }
+  .active-tag.is-active {
+    color: #84e184; }
+  .active-tag.is-not-active {
+    color: #ffb3b3; }
+
+.panel {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  box-shadow: -6px 6px 6px -6px #8c8c8c;
+  background-color: #ffffff; }
+  .panel .panel-top {
+    height: 40px;
+    color: #00a4a4;
+    line-height: 50px; }
+  .panel .panel-body {
+    padding: 0 20px; }
+  .panel.content-panel {
+    height: 690px;
+    line-height: 30px; }
+    .panel.content-panel hr {
+      width: 98%; }
+    .panel.content-panel h3 {
+      position: absolute;
+      left: 20px; }
+  .panel.highlight-panel {
+    height: 110px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #666666; }
+  .panel.dashboard-panel {
+    height: 300px; }
+    .panel.dashboard-panel h3 {
+      position: relative;
+      left: 20px;
+      font-size: 14px;
+      font-weight: bold; }
+    .panel.dashboard-panel hr {
+      width: 95%; }
+    .panel.dashboard-panel.dashboard-panel-small {
+      height: 200px; }
+  .panel.project-panel {
+    padding: 20px;
+    height: 150px;
+    word-wrap: break-word; }
+    .panel.project-panel .projects-icon {
+      font-size: 16px; }
+    .panel.project-panel .projects-name {
+      color: #00a4a4; }
+    .panel.project-panel h3 {
+      font-size: 18px; }
+    .panel.project-panel hr {
+      width: 100%; }
+
+.panel-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e6e6e6; }
+
+.left-sidebar {
+  background-color: #001a1a;
+  color: #00a4a4;
+  height: 100%; }
+  .left-sidebar.left-sidebar-wrapper {
+    vertical-align: top;
+    position: fixed;
+    width: 225px;
+    top: 40px;
+    color: #00a4a4; }
+    .left-sidebar.left-sidebar-wrapper.collapsed {
+      width: 50px; }
+  .left-sidebar.left-sidebar-nav {
+    position: absolute;
+    overflow-y: auto; }
+  .left-sidebar ul, .left-sidebar li {
+    white-space: nowrap; }
+    .left-sidebar ul > ul.sub-menu, .left-sidebar li > ul.sub-menu {
+      background: #001010;
+      width: 100%; }
+      .left-sidebar ul > ul.sub-menu.sub-menu-default, .left-sidebar li > ul.sub-menu.sub-menu-default {
+        border: none;
+        display: none; }
+      .left-sidebar ul > ul.sub-menu li a, .left-sidebar li > ul.sub-menu li a {
+        text-align: left;
+        border-bottom: 1px solid #003939; }
+    .left-sidebar ul .bottom-border, .left-sidebar li .bottom-border {
+      border-bottom: 1px solid #002e2e; }
+    .left-sidebar ul.left-sidebar-menu-parent, .left-sidebar li.left-sidebar-menu-parent {
+      position: relative;
+      height: auto;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      text-align: left;
+      border-bottom: 1px solid #002e2e; }
+      .left-sidebar ul.left-sidebar-menu-parent.top-menu-parent, .left-sidebar li.left-sidebar-menu-parent.top-menu-parent {
+        border-bottom: none; }
+      .left-sidebar ul.left-sidebar-menu-parent i, .left-sidebar li.left-sidebar-menu-parent i {
+        font-size: 18px; }
+      .left-sidebar ul.left-sidebar-menu-parent a, .left-sidebar li.left-sidebar-menu-parent a {
+        display: block;
+        position: relative;
+        font-weight: 400;
+        padding: 10px; }
+        .left-sidebar ul.left-sidebar-menu-parent a span, .left-sidebar li.left-sidebar-menu-parent a span {
+          line-height: 27px; }
+          .left-sidebar ul.left-sidebar-menu-parent a span.menu-down-arrow, .left-sidebar li.left-sidebar-menu-parent a span.menu-down-arrow {
+            float: right;
+            color: #007171; }
+
+.left-sidebar-nav > ul > li.active, .left-sidebar-nav > ul > li:hover,
+.left-sidebar-nav > ul ul li.active,
+.left-sidebar-nav > ul ul li:hover {
+  background: #002929; }
+
+.left-sidebar-nav > ul ul li.active, .left-sidebar-nav > ul ul li:hover {
+  background: #004d4d;
+  color: #009494; }
+
+.welcome-box {
+  border-top: 1px solid #003131;
+  border-bottom: 2px solid #000b0b;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .welcome-box div.logged-in-user {
+    padding-top: 25px;
+    padding-bottom: 15px; }
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: white;
+  text-align: center;
+  position: relative;
+  left: 90px;
+  top: 15px;
+  font-size: 28px;
+  text-align: center; }
+
+.table-container {
+  padding-left: 30px;
+  padding-top: 10px; }
+
+table {
+  width: 100%; }
+
+td, th {
+  text-align: left;
+  padding: 3px; }
+
+th {
+  color: #00a4a4;
+  font-size: 18px; }
+
+.md-dialog-size {
+  min-width: 500px !important; }
+
+.md-dialog-style {
+  border-radius: 0 !important; }
+
+.form-toolbar {
+  background-color: #00a4a4; }
+  .form-toolbar h2 {
+    color: #ffffff !important; }
+
+.page-toggle {
+  font-size: 11px !important;
+  font-weight: normal; }
+
+.show-filter {
+  position: relative;
+  display: inline;
+  bottom: 8px;
+  right: 5px;
+  color: #999999;
+  font-weight: bold;
+  font-size: 14px; }
+
+.selected-switch {
+  pointer-events: none;
+  font-size: 11px !important;
+  font-weight: normal;
+  color: #00a4a4; }
+
+.create-new-button {
+  font-size: 32px; }
+
+.tasks-create-button {
+  padding: 0 20px; }
+
+.button-container {
+  position: relative;
+  right: 20px; }
+
+.delete-button {
+  position: relative;
+  right: 5px; }
+
+.mdi-primary-font {
+  color: #00a4a4; }
+
+.mdi-primary-font:hover {
+  color: #00b8b8; }
+
+.mdi-primary-background:not([disabled]) {
+  background-color: #00a4a4;
+  color: #ffffff; }
+
+.mdi-primary-background:not([disabled]):hover {
+  background-color: #00b8b8 !important;
+  color: #ffffff !important; }
+
+.project-button-toolbar {
+  text-align: right;
+  line-height: 50px;
+  font-size: 22px;
+  margin-right: 20px; }
+  .project-button-toolbar .add-task-button {
+    bottom: 3px;
+    font-size: 14px; }
+
+.text-button {
+  position: relative;
+  color: #999999 !important; }
+
+.text-button:hover {
+  color: #bfbfbf !important; }
+
+.help-icon {
+  position: relative;
+  bottom: 1px; }
+
+.tasks-dashboard-header {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  height: 75px;
+  padding: 5px 5px 0; }
+
+.tasks-dashboard-heading {
+  margin: 0 30px; }
+
+.tasks-dashboard {
+  position: relative;
+  margin: 0 15px;
+  min-height: 700px;
+  background-color: #e6e6e6; }
+
+.task {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  top: 3px;
+  padding: 15px 20px;
+  line-height: 25px; }
+  .task .task-text {
+    font-size: 14px;
+    color: #00a4a4; }
+  .task .task-text-content {
+    font-size: 12px; }
+
+.task-detail-field {
+  font-weight: bold; }
+
+.project-list {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .project-list .project-description {
+    position: relative;
+    left: 25px;
+    padding-top: 25px; }
+
+.taskmanager-logo {
+  position: absolute; }
+  .taskmanager-logo .taskmanager-logo-wrapper {
+    position: relative;
+    bottom: 24px;
+    left: 38px; }
+    .taskmanager-logo .taskmanager-logo-wrapper .background {
+      width: 22.5px;
+      height: 17px;
+      background: #008f8f;
+      border: 2px solid #001010; }
+    .taskmanager-logo .taskmanager-logo-wrapper .side-rectangles {
+      position: relative;
+      top: 5px;
+      width: 6.75px;
+      height: 12.3px;
+      background: #000606; }
+      .taskmanager-logo .taskmanager-logo-wrapper .side-rectangles.right-rectangle {
+        top: -7px;
+        left: 15.75px; }
+    .taskmanager-logo .taskmanager-logo-wrapper .connecting-rectangles {
+      position: relative;
+      width: 6px;
+      top: 1px;
+      left: 5.5px;
+      height: 10.8px;
+      background: #000606;
+      transform: rotate(140deg); }
+      .taskmanager-logo .taskmanager-logo-wrapper .connecting-rectangles.right-connecting-rectangle {
+        left: -4.275px;
+        transform: rotate(40deg); }
+    .taskmanager-logo .taskmanager-logo-wrapper .bottom-section {
+      position: relative;
+      width: 4.5px;
+      height: 8.1px;
+      background: #000606;
+      top: -16px;
+      left: 9px; }
+
+.taskmanager-logo-text {
+  position: relative;
+  left: 37px;
+  font-size: 16px;
+  font-weight: bold; }
+
+/** kjhkd **/

@@ -1,0 +1,53 @@
+﻿<header id="topbanner" class="bannerbar" role="banner">
+    <div class="toolbar-left">
+        <a ui-ref="app" href="/#/app/index"> <i class="mdi mdi-22px mdi-menu"></i></a>
+        <div class="divider"></div>
+        <div class="taskmanager">
+            <div class="taskmanager-logo">
+                <div class="taskmanager-logo-wrapper">
+                    <div class="background">
+                        <div class="side-rectangles">
+                            <div class="connecting-rectangles"></div>
+                        </div>
+                        <div class="side-rectangles right-rectangle">
+                            <div class="connecting-rectangles right-connecting-rectangle"></div>
+                        </div>
+                        <div class="bottom-section"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="taskmanager-logo-text">Task Manager</span>
+        </div>
+    </div>
+    <div class="toolbar-right">
+        <a><i class="mdi mdi-18px mdi-information-outline help-icon"></i><md-tooltip>Help</md-tooltip></a>
+        <a ui-ref="app" href="/#/app"> <i class="mdi mdi-24px mdi-settings"></i></a>
+    </div>
+</header>
+
+<aside id="left-sidebar" class="left-sidebar left-sidebar-wrapper">
+    <div class="left-sidebar">
+        <div class="welcome-box">
+            <div class="icon-circle">
+                <i class="mdi mdi-account"></i>
+            </div>
+            <div class="logged-in-user">
+               <p>Jack Lovett</p>
+            </div>
+        </div>
+        <div class="left-sidebar">
+            <nav class="left-sidebar-nav" role="navigation">
+                <ul ng-include="'app/app/partial/app.navigation.html'"></ul>
+            </nav>
+        </div>
+    </div>
+</aside>
+<div class="page">
+    <div class="breadcrumb-panel">
+        <p>Overview</p>
+    </div>
+    <div layout="column" flex="100" class="page-content" ui-view>
+        <div ng-include="'app/overview/personal/views/personal.overview.html'"></div>
+    </div>
+</div>
+

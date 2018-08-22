@@ -1,0 +1,19 @@
+﻿.table-container {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+table {
+    width: 100%;         
+} 
+
+td, th {
+        text-align:left;
+        padding:3px;
+    } 
+
+th {
+    color: $theme-color;
+    font-size: 18px;    
+}
+

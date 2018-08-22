@@ -1,0 +1,23 @@
+﻿<div class="md-dialog-container md-dialog-size-m">
+    <md-dialog class="md-dialog-size md-dialog-style">
+        <md-toolbar>
+            <div layout="row" class="md-toolbar-tools form-toolbar">
+                <div flex="50"><h2>Add A New Task</h2></div>
+                <div flex="50" layout="row" layout-align="end center">
+                    <a ng-click="cancel()"><i class="mdi mdi-close"></i></a>
+                </div>
+            </div>
+        </md-toolbar>
+        <div class="md-dialog-content">
+            <div class="md-dialog-content-body">
+                <form name="frmtask" novalidate autocomplete="off">
+                    <div ng-include="'/app/tasks/partial/tasks.form.html'"></div>
+                    <md-dialog-actions layout="row" class="layout-row">
+                        <button type="button" class="md-raised md-button mdi-primary-background" ng-click="save()" ng-disabled="frmtask.$invalid || frmtask.$pending">Save</button>
+                        <button type="button" class="md-raised md-button text-button" ng-click="cancel()">Cancel</button>
+                    </md-dialog-actions>
+                </form>
+            </div>
+        </div>
+    </md-dialog>
+</div>

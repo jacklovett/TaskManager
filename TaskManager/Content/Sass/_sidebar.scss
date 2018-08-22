@@ -1,0 +1,127 @@
+﻿.left-sidebar {
+    background-color: $sidebar-background;
+    color: $theme-color;
+    height: 100%;
+
+    &.left-sidebar-wrapper {
+        vertical-align: top;
+        position: fixed;
+        width: $left-width;
+        top: $navbar-height;
+        color: $sidebar-text-color;
+
+        &.collapsed {
+            width: $sidebar-width-collapsed;
+        }
+    }
+
+    &.left-sidebar-nav {
+        position: absolute;
+        overflow-y: auto;
+    }
+
+    ul, li {
+        white-space: nowrap;
+
+        & > ul.sub-menu {
+            background: darken($sidebar-background, 2%);
+            width: 100%;
+
+            &.sub-menu-default {
+                border: none;
+                display: none;
+            }
+
+            & li a {
+                text-align: left;
+                border-bottom: 1px solid darken($nav-divider-color, 1%);
+            }
+        }
+
+        .bottom-border {
+            border-bottom: 1px solid darken($nav-divider-color, 3%);
+        }
+
+        &.left-sidebar-menu-parent {
+            position: relative;
+            height: auto;
+            font-size: 14px;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 1px solid darken($nav-divider-color, 3%);
+
+            &.top-menu-parent {
+                border-bottom: none;
+            }
+
+            & i {
+                font-size: 18px;
+            }
+
+            & a {
+                display: block;
+                position: relative;
+                font-weight: 400;
+                padding: 10px;
+
+                & span {
+                    line-height: 27px;
+
+                    &.menu-down-arrow {
+                        float: right;
+                        color: lighten($nav-divider-color, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.left-sidebar-nav > ul > li,
+.left-sidebar-nav > ul ul li {
+    &.active,
+    &:hover {
+        background: lighten($sidebar-background, 3%);
+    }
+}
+
+.left-sidebar-nav > ul ul li {
+    &.active,
+    &:hover {
+        background: lighten($sidebar-background, 10%);
+        color: darken($sidebar-text-color, 3%);
+    }
+}
+
+.welcome-box {
+    border-top: 1px solid darken($nav-divider-color, 2.5%);
+    border-bottom: 2px solid darken($nav-divider-color, 10%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    div.logged-in-user {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: white;
+    text-align: center;
+    position: relative;
+    left: 90px;
+    top: 15px;
+    font-size: 28px;
+    text-align:center;
+}

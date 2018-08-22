@@ -1,0 +1,56 @@
+﻿<div layout="row" flex="100" style="margin-top: 5px; margin-bottom: 5px;">
+    <div flex="50">
+        <h1 class="page-title">Active Tasks</h1>
+    </div>
+    <div flex="50" layout="row" layout-align="end center">
+        <div class="button-container">
+            <div class="show-filter" >
+                <span ng-if="tasksLoadCtrl.personal">
+                    <a class="selected-switch">My Task's</a> | <a class="text-button page-toggle" ng-click="tasksLoadCtrl.filterLoad()">Team's Tasks</a>
+                </span>
+                <span ng-if="!tasksLoadCtrl.personal">
+                    <a class="text-button page-toggle" ng-click="tasksLoadCtrl.filterLoad()">My Task's</a> | <a class="selected-switch">Team's Tasks</a>
+                </span>
+            </div>
+            
+            <a class="create-new-button" ng-click="tasksLoadCtrl.openAddTaskDialog()"><i class="mdi mdi-plus-circle mdi-primary-font"></i><md-tooltip>Add New Task</md-tooltip></a>
+        </div>
+    </div>
+</div>
+<div layout="row" style="padding-right: 5px; padding-left: 5px;">
+    <div class="tasks-dashboard-header" flex="100" layout="row" layout-align="start center">
+        <div flex="25">
+            <h3 class="tasks-dashboard-heading">To Do</h3>
+        </div>
+        <div flex="25">
+            <h3 class="tasks-dashboard-heading">In Progress</h3>
+        </div>
+        <div flex="25">
+            <h3 class="tasks-dashboard-heading">Ready for Testing</h3>
+        </div>
+        <div flex="25">
+            <h3 class="tasks-dashboard-heading">Completed</h3>
+        </div>
+    </div>
+</div>
+<div flex="100" layout="row">
+    <div flex="25" class="tasks-dashboard" layout="column">
+        <div class="task" flex="20" ng-repeat="item in tasksLoadCtrl.tasks">
+            <h3><i class="mdi mdi-clipboard-text"></i> {{ item.projectName }} </h3>
+            <a class="task-text" ng-click="tasksLoadCtrl.openCreateDialog(item.taskId)">{{ item.name }}</a>
+            <p>{{ item.description }}</p>
+            <p class="task-text-content">
+                <span class="task-detail-field">Assigned To:</span> {{ item.assignee }}
+            </p>
+            <p class="task-text-content" ng-if="item.deadline">
+                <span task-detail-field>Deadline:</span> {{item.deadline}}
+            </p>
+        </div>
+    </div>
+    <div flex="25" class="tasks-dashboard">
+    </div>
+    <div flex="25" class="tasks-dashboard">
+    </div>
+    <div flex="25" class="tasks-dashboard">
+    </div>
+</div>

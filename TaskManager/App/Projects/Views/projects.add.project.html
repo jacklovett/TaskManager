@@ -1,0 +1,27 @@
+﻿<div class="md-dialog-container md-dialog-size-m ">
+    <md-dialog class="md-dialog-size md-dialog-style">
+        <md-toolbar>
+            <div layout="row" class="md-toolbar-tools form-toolbar">
+                <div flex="50">
+                    <h2 ng-if="projectId == 0">Add A New Project</h2>
+                    <h2 ng-if="projectId != 0">Edit Project</h2>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                    <a ng-click="cancel()"><i class="mdi mdi-close"></i></a>
+                </div>
+            </div>
+        </md-toolbar>
+        <div class="md-dialog-content">
+            <div class="md-dialog-content-body">
+                <form name="frmproject" novalidate autocomplete="off">
+                    <div ng-include="'/app/projects/partial/projects.form.html'"></div>
+                    <md-dialog-actions layout="row" class="layout-row">
+                        <button type="button" class="md-raised md-button mdi-primary-background" ng-click="save()" ng-disabled="frmproject.$invalid || frmproject.$pending">Save</button>
+                        <button type="button" class="md-raised md-button text-button" ng-click="cancel()">Cancel</button>
+                    </md-dialog-actions>
+                </form>
+            </div>
+        </div>
+    </md-dialog>
+</div>
+

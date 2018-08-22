@@ -1,0 +1,40 @@
+﻿.tasks-dashboard-header {
+    position: relative;
+    border: 1px solid darken($content-panel-border, 10%);
+    background-color: $content-panel-background;
+    height: 75px;
+    padding: 5px 5px 0;
+}
+
+.tasks-dashboard-heading {
+    margin: 0 30px;
+}
+
+.tasks-dashboard {
+    position: relative;
+    margin: 0 15px;
+    min-height: 700px;
+    background-color: #e6e6e6;
+}
+
+.task {
+    position: relative;
+    background-color: $content-panel-background;
+    border: 1px solid darken($content-panel-border, 0%);
+    top: 3px;
+    padding: 15px 20px;
+    line-height: 25px;
+
+    .task-text {
+        font-size: 14px;
+        color: $theme-color;
+    }
+
+    .task-text-content {
+        font-size: 12px;
+    }
+}
+
+.task-detail-field {
+        font-weight: bold;
+ }

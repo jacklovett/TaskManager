@@ -1,0 +1,129 @@
+﻿html {
+    position: relative;
+    min-height: 100px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+    color: $content-color;
+}
+
+body {
+    font-family: 'Open Sans', 'Droid Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.54;
+    color: $content-color;
+    background-color: $page-content-background;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+    color: $theme-color;    
+        
+    &.page-title {
+    position: relative;
+    margin-left: 20px;
+    }
+
+    &.project-page-title {
+        position: absolute;
+        margin-left: 20px;
+    }
+}
+
+#topbanner {
+    border: none;
+    color: $theme-color;
+    height: $navbar-height;
+
+    &.bannerbar {
+        background-color: $navbar-background;
+
+        .toolbar-left {
+            position: absolute;
+            padding: 5px 0 0 11px;
+            font-size: 20px;
+            color: $theme-color;
+
+           div.divider {
+                display: inline;
+                margin-left: 5px;
+                border-left: 2px solid $nav-divider-color;
+            }
+
+           div.taskmanager {
+                display: inline;
+                position: relative;
+                left: 10px;
+            }
+        }
+
+        .toolbar-right {
+            position: relative;
+            padding-top: 7px;
+            float: right;
+            right: 15px;
+            font-size: 20px;
+            color: $theme-color;                        
+        }
+    }
+}
+
+
+.page {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 15px;
+    top: $page-content-top;
+    bottom: 0px;
+    left: $page-content-left;
+    right: 0;
+    
+    .breadcrumb-panel {
+        position: relative;
+        height: $breadcrumb-height;
+        width: $breadcrumb-width;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $breadcrumb-color;
+        border-bottom: 1px solid $breadcrumb-color;
+    }
+
+    .page-content {
+        padding-top: 5px;
+        margin: 5px;
+    }
+}
+
+hr {
+    width: 90%;
+    color: $content-panel-border;
+    background-color: $content-panel-border;
+    opacity: 0.5;
+    border-radius: 20%;
+}
+
+.overview-row {
+    position: relative;
+    bottom: 20px;
+    
+    &.overview-third-row {
+        bottom: 40px;
+    }       
+}
+
+.active-tag {
+    font-size: 12px;
+    font-weight: normal;
+
+        &.is-active {         
+         color: $active-color;
+     }
+
+        &.is-not-active {
+          color: $inactive-color;
+        }
+}

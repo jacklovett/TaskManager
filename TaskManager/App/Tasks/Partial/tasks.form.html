@@ -1,0 +1,36 @@
+﻿<md-input-container class="md-block">
+    <label>Project</label>
+    <md-select ng-model="task.projectId">
+        <md-option ng-repeat="item in projectsSrc" value="{{item.projectId}}">
+            {{item.name}}
+        </md-option>
+    </md-select>
+    <div ng-messages="frmtask.project.$error">
+        <div ng-message="required">Please select a project.</div>
+    </div>
+</md-input-container>
+<md-input-container class="md-block">
+    <label>Task Name</label>
+    <input type="text" name="name" id="name" ng-model="task.name" required/>
+    <div ng-messages="frmtask.name.$error">
+        <div ng-message="required">Please enter a name.</div>
+    </div>
+</md-input-container>
+<md-input-container class="md-block">
+    <label>Task Description</label>
+    <textarea name="description" id="description" rows="5" ng-model="task.description" required></textarea>
+    <div ng-messages="frmtask.description.$error">
+        <div ng-message="required">Please enter a description.</div>
+    </div>
+</md-input-container>
+<md-input-container class="md-block">
+    <label>Assign To</label>
+    <md-select ng-model="task.assigneeId">
+        <md-option ng-repeat="item in accountsSrc" value="{{item.accountId}}">
+            {{item.firstName + ' ' + item.lastName}}
+        </md-option>
+    </md-select>
+</md-input-container>
+<div>
+    <md-datepicker ng-model="task.deadline" md-placeholder="Deadline" id="deadline"></md-datepicker>
+</div>

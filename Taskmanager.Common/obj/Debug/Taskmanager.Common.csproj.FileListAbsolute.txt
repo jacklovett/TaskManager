@@ -1,0 +1,8 @@
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\bin\Debug\Taskmanager.Common.dll.config
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\bin\Debug\Taskmanager.Common.dll
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\bin\Debug\Taskmanager.Common.pdb
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\obj\Debug\Taskmanager.Common.dll
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\obj\Debug\Taskmanager.Common.pdb
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Taskmanager.Common\obj\Debug\Taskmanager.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\bin\Debug\Taskmanager.Database.dacpac
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\bin\Debug\Taskmanager.Database.dll
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\bin\Debug\Taskmanager.Database.pdb
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\Model.xml
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\refactor.xml
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\postdeploy.sql
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\predeploy.sql
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\Taskmanager.Database.dll
+C:\Users\jackl\OneDrive\Documents\Visual Studio 2015\Projects\TaskManager\Database\Taskmanager.Database\Taskmanager.Database\obj\Debug\Taskmanager.Database.pdb

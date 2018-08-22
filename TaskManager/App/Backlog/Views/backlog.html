@@ -1,0 +1,25 @@
+﻿<div layout="row" flex="100" style="margin-top: 5px; margin-bottom: 5px;">
+    <h1 class="page-title" ng-if="backlogLoadCtrl.personal">
+        <a ng-click="backlogLoadCtrl.filterLoad()">
+            My Backlog
+        </a>
+        <span class="text-button page-toggle"><a ng-click="backlogLoadCtrl.filterLoad()">/ Team's Backlog</a></span>
+    </h1>
+    <h1 class="page-title" ng-if="!backlogLoadCtrl.personal">
+        <a ng-click="backlogLoadCtrl.filterLoad()">
+            Team's Backlog
+        </a>
+        <span class="text-button page-toggle"><a ng-click="backlogLoadCtrl.filterLoad()">/ My Backlog</a></span>
+    </h1>
+</div>
+<div style="margin: 10px 20px; font-size: 18px;">
+    <h3>Task History</h3>
+</div>
+<div layout="column">
+    <md-list-item class="panel" style="margin: 1px 10px; padding: 0 10px;" ng-repeat="item in backlogLoadCtrl.backlog">
+        <p style="color: #00a4a4; font-weight: bold;"><i class="mdi mdi-clipboard-text"></i> {{ item.projectName }}</p>
+        <p style="color: #00a4a4;"> {{ item.name }}</p>
+        <p><strong>Assigned To: </strong> {{ item.assignee }}</p>
+        <p><strong>Completed Date: </strong> {{ item.completedDate | date : "d MMM y h:mm:ss a" }}</p>
+    </md-list-item>
+</div>

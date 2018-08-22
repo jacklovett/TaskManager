@@ -1,0 +1,29 @@
+﻿<div layout="row" flex="100" style="margin-top: 5px; margin-bottom: 5px;">
+    <div flex="50"><h1 class="page-title">Projects</h1></div>
+    <div flex="50" class="button-container" layout="row" layout-align="end center">
+        <a class="delete-button text-button">DELETE</a>
+        <a class="create-new-button" ng-click="projectsLoadCtrl.openCreateDialog(0)"><i class="mdi mdi-plus-circle mdi-primary-font"></i><md-tooltip>Add Project</md-tooltip></a>
+    </div>
+</div>
+<div layout="row"  layout-wrap>
+    <div flex="100" flex-gt-sm="50" flex-gt-md="33" ng-repeat="item in projectsLoadCtrl.projects">
+        <div style="padding: 10px;">
+            <div class="panel project-panel project-panel-sm">
+                <h3>
+                    <i class="projects-icon mdi mdi-clipboard-text"></i> {{item.name}}
+                    <span class="active-tag is-active" ng-if="item.isActive">&nbsp;Active</span>
+                    <span class="active-tag is-not-active" ng-if="!item.isActive">&nbsp;Not Active</span>
+                </h3>
+                <hr />
+                <p style="margin-top: 20px;">{{item.description}}</p>
+                <div class="panel-footer" flex="100">
+                    <div class="project-button-toolbar">
+                        <a class="text-button add-task-button" ng-click="projectsLoadCtrl.openAddTaskDialog(item.projectId)">ADD TASK</a>
+                        <a class="mdi mdi-pencil-box mdi-primary-font" ng-click="projectsLoadCtrl.openCreateDialog(item.projectId)"><md-tooltip>Edit</md-tooltip></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

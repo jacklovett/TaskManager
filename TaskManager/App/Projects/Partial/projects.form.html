@@ -1,0 +1,14 @@
+﻿<md-input-container class="md-block">
+    <label>Project Name</label>
+    <input type="text" name="name" id="name" ng-model="project.name" required />
+    <div ng-messages="frmproject.name.$error">
+        <div ng-message="required">Please enter a name.</div>
+    </div>
+</md-input-container>
+<md-input-container class="md-block">
+    <label>Project Description</label>
+    <textarea name="description" id="description" rows="5" ng-model="project.description" required></textarea>
+    <div ng-messages="frmproject.description.$error">
+        <div ng-message="required">Please enter a description.</div>
+    </div>
+</md-input-container>

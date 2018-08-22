@@ -1,0 +1,89 @@
+﻿.panel {
+    position: relative;
+    border: 1px solid $content-panel-border;
+    box-shadow: -6px 6px 6px -6px #8c8c8c;
+    background-color: $content-panel-background;
+
+    .panel-top {
+        height: 40px;
+        color: $theme-color;
+        line-height: 50px;
+    }
+
+    .panel-body {
+        padding: 0 20px;
+    }
+
+    &.content-panel {
+        height: 690px;
+        line-height: 30px;
+
+        hr {
+            width: 98%;
+        }
+
+        h3 {
+            position: absolute;
+            left: 20px;
+        }
+    }
+
+    &.highlight-panel {
+        height: 110px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+        color: $content-color;
+    }
+
+    &.dashboard-panel {
+        h3 {
+            position: relative;
+            left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        height: 300px;
+
+        hr {
+            width: 95%;
+        }
+
+        &.dashboard-panel-small {
+            height: 200px;
+        }
+    }
+
+    &.project-panel {
+        padding: 20px;
+        height: 150px;
+        word-wrap: break-word;
+
+        .projects-icon {
+            font-size: 16px;
+        }
+
+        .projects-name {
+            color: $theme-color;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        hr {
+            width: 100%;
+        }
+    }
+}
+
+.panel-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $page-content-background;
+    border-top: 1px solid $content-panel-border;
+}

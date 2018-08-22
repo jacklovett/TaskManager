@@ -1,0 +1,57 @@
+﻿/*
+*   Theme
+*/
+$theme-base-color: #001a1a;
+$theme-color: lighten($theme-base-color, 27%);
+/*
+*   Header (Nav)
+*/
+$navbar-background: $theme-base-color;
+$navbar-color: $theme-color;
+$navbar-height: 40px;
+$left-width: 225px;
+
+/*
+    Nav divider
+*/
+$nav-divider-color: darken($navbar-color, 20%);
+
+/*
+*   Sidebar
+*/
+$sidebar-top: $navbar-height;
+$sidebar-width: $left-width;
+$sidebar-width-collapsed: 50px;
+$sidebar-background: $navbar-background;
+$sidebar-text-color: $theme-color;
+$sidebar-border-color: $nav-divider-color;
+
+/*
+*   Bread Crumbs
+*/
+$active-crumb-background: #f5f5f5;
+$breadcrumb-color: $theme-color;
+$breadcrumb-height: 25px;
+$breadcrumb-width: 100%;
+
+/*
+*   Page Content
+*/
+$page-content-top: $navbar-height;
+$page-content-left: $left-width;
+$page-content-background: #f2f2f2;
+$content-panel-background: #ffffff;
+$content-panel-border: #e6e6e6;
+$content-color: #666666;
+
+/*
+*   Active Tags
+*/
+$active-color: #84e184;
+$inactive-color: #ffb3b3;
+
+/*
+* Buttons
+*/
+$hover-color: lighten($theme-color, 4%);
+$hover-color-text: #bfbfbf;

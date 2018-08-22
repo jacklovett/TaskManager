@@ -1,0 +1,83 @@
+﻿.page-toggle {
+    font-size: 11px !important;
+    font-weight: normal;
+}
+
+.show-filter {
+    position: relative;
+    display: inline;
+    bottom: 8px;
+    right: 5px;
+    color: #999999;
+    font-weight: bold;  
+    font-size: 14px;  
+}
+
+.selected-switch {
+    pointer-events: none;
+    font-size: 11px !important;
+    font-weight: normal;
+    color: $theme-color;
+}
+
+.create-new-button {
+    font-size: 32px;
+}
+
+.tasks-create-button {
+    padding: 0 20px;      
+}
+
+.button-container {
+    position: relative;
+    right: 20px;
+}
+
+.delete-button {
+    position: relative;
+    right: 5px;
+}
+
+.mdi-primary-font {
+    color: $theme-color;
+}
+
+.mdi-primary-font:hover {
+    color: $hover-color;
+}
+
+.mdi-primary-background:not([disabled]) {
+    background-color: $theme-color;
+    color: #ffffff;   
+}
+
+.mdi-primary-background:not([disabled]):hover {
+    background-color: $hover-color !important;
+    color: #ffffff !important;
+}
+ 
+.project-button-toolbar {
+    text-align: right;
+    line-height: 50px;
+    font-size: 22px;
+    margin-right: 20px;
+
+    .add-task-button {
+        bottom: 3px;
+        font-size: 14px;
+    }
+}
+
+.text-button {
+    position: relative;
+    color: #999999 !important;
+}
+
+.text-button:hover {
+    color: $hover-color-text !important;
+}
+
+.help-icon {
+    position: relative;
+    bottom: 1px;
+}
