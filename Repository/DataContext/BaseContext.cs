@@ -27,7 +27,7 @@ namespace Taskmanager.Repository.DataContext
 
         public override int SaveChanges()
         {
-            throw new NotImplementedException("Cannot save changes with out specifying an agent name");
+            throw new NotImplementedException("Cannot save changes without specifying an agent name");
         }
 
         /// <summary>
